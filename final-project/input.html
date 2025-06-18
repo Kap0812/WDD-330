@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriPlan - Recipe & Nutrition Planner</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <script type="module" src="scripts/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>🥗 NutriPlan</h1>
+    <input type="text" id="searchInput" placeholder="Search recipes...">
+    <select id="dietFilter">
+      <option value="all">All</option>
+      <option value="keto">Keto</option>
+      <option value="vegan">Vegan</option>
+      <option value="gluten-free">Gluten-Free</option>
+    </select>
+  </header>
+
+  <main>
+    <section id="recipeResults">
+      <!-- Recipe cards injected here -->
+    </section>
+
+    <section id="mealPlanner">
+      <h2>Weekly Meal Planner</h2>
+      <div class="planner">
+        <div class="day" data-day="Monday">
+          <h3>Monday</h3>
+          <button class="addMeal">+ Add Meal</button>
+          <ul class="mealList"></ul>
+        </div>
+        <!-- Repeat for other days -->
+      </div>
+    </section>
+
+    <section id="groceryList">
+      <h2>Grocery List</h2>
+      <ul id="groceryItems">
+        <!-- Ingredients listed here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Smart Meal Planner</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
